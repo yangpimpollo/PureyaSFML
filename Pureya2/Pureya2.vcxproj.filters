@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\util">
+      <UniqueIdentifier>{85f98922-6d70-41fe-9dd5-d23de609c987}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\states">
+      <UniqueIdentifier>{61b6e1c1-0591-4111-a13c-92fa6c4a35ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\util">
+      <UniqueIdentifier>{870c72c6-2a8f-4c4f-bc96-8806dc17de04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\tools">
+      <UniqueIdentifier>{ef097d73-0816-4015-9eb6-0495d63cff5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\states">
+      <UniqueIdentifier>{634a19e3-9217-40cc-87a2-328a040ef7ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\tools">
+      <UniqueIdentifier>{4d214d09-c757-4364-b97c-9b0d15368c4e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\game_init.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\tools\Button.cpp">
+      <Filter>Source Files\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="source\tools\Label.cpp">
+      <Filter>Source Files\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="source\util\Context.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="source\util\debug_mode.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="source\util\eventListener.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="source\states\state_MENU.cpp">
+      <Filter>Source Files\states</Filter>
+    </ClCompile>
+    <ClCompile Include="source\states\state_PLAY.cpp">
+      <Filter>Source Files\states</Filter>
+    </ClCompile>
+    <ClCompile Include="source\states\state_SCRE.cpp">
+      <Filter>Source Files\states</Filter>
+    </ClCompile>
+    <ClCompile Include="source\states\state_SETG.cpp">
+      <Filter>Source Files\states</Filter>
+    </ClCompile>
+    <ClCompile Include="source\states\StateMachine.cpp">
+      <Filter>Source Files\states</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="header\game_init.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="header\states\state_MENU.h">
+      <Filter>Header Files\states</Filter>
+    </ClInclude>
+    <ClInclude Include="header\states\state_PLAY.h">
+      <Filter>Header Files\states</Filter>
+    </ClInclude>
+    <ClInclude Include="header\states\state_SCRE.h">
+      <Filter>Header Files\states</Filter>
+    </ClInclude>
+    <ClInclude Include="header\states\state_SETG.h">
+      <Filter>Header Files\states</Filter>
+    </ClInclude>
+    <ClInclude Include="header\states\StateBase.h">
+      <Filter>Header Files\states</Filter>
+    </ClInclude>
+    <ClInclude Include="header\states\StateMachine.h">
+      <Filter>Header Files\states</Filter>
+    </ClInclude>
+    <ClInclude Include="header\tools\Button.h">
+      <Filter>Header Files\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="header\tools\Label.h">
+      <Filter>Header Files\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="header\util\Context.h">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="header\util\debug_mode.h">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="header\util\eventListener.h">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
