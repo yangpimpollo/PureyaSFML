@@ -12,6 +12,7 @@ private:
 	int targetState;
 	Button startBtn;
 	Button settgBtn;
+	Button closeBtn;
 
 public:
 	state_MENU();
@@ -24,7 +25,7 @@ public:
 	bool getActiveStatus();
 	int getTargetState();
 	int getStateIdentity();
-	void action();
+	void action(Context* arg);
 };
 
 #endif

@@ -9,7 +9,8 @@ class debug_mode
 {
 	private:
 		sf::Font font;
-		sf::Text fps_txt;
+		sf::Text fps_txt, mouse_X, mouse_Y;
+
 		int fps;
 		bool debug;
 	public:

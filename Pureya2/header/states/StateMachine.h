@@ -22,6 +22,9 @@ private:
 	state_SETG stateSetg;
 	state_PLAY statePlay;
 
+	sf::Texture back;
+	sf::RectangleShape background;
+
 public:
 	StateMachine();
 	~StateMachine();

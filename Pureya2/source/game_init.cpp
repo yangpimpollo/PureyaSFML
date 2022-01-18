@@ -71,10 +71,12 @@ void game_init::cicles()
             }
 
             
-            /*if (event.type == sf::Event::MouseButtonReleased) {
-                std::cout << "CLICK" << std::endl;
+            if (event.type == sf::Event::MouseButtonReleased) {
+                std::cout << " ---click-click---" << std::endl;
+                std::cout << contex->getMousePosition().x << std::endl;
+                std::cout << contex->getMousePosition().y << std::endl;
                 
-            }*/
+            }
 
         }
         update();

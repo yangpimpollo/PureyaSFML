@@ -20,3 +20,10 @@
 22.01.17
 	setlabel change       listo!
 	save settings         listo!
+	debug mouse position  listo!
+22.01.18
+	center view           listo!
+
+
+
+

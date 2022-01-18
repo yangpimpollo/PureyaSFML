@@ -47,7 +47,7 @@ void Label::setValues(float x, float y, int size, sf::String arg)
     font.loadFromFile("res/Mamelon.otf");
     labelText.setFont(font);
     labelText.setCharacterSize(size);
-    labelText.setFillColor(sf::Color::White);
+    labelText.setFillColor(sf::Color::Blue);
     labelText.setPosition(x, y);
     labelText.setString(arg);
     this->width = labelText.getLocalBounds().width;

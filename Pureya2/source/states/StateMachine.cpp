@@ -8,6 +8,13 @@ StateMachine::StateMachine()
 	this->stateList.push_back(&stateSetg);
 	this->stateList.push_back(&statePlay);
 	setCurrentState(stateList[0]);
+
+	back.loadFromFile("res/landscape.png");
+	background.setSize(sf::Vector2f(960.0f, 480.0f));
+	//background:sf::RectangleShape(sf::Vector2f(100.0f, 100.0f));
+	background.setTexture(&back);
+	//background.setFillColor(sf::Color::Cyan);
+	background.setPosition(0.f, 0.f);
 }
 
 StateMachine::~StateMachine()
@@ -32,6 +39,7 @@ void StateMachine::updateState(Context* arg)
 
 void StateMachine::renderState(sf::RenderWindow* arg)
 {
+	arg->draw(background);
 	this->currentState->renderState(arg);
 }
 
