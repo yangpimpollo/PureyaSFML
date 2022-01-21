@@ -65,18 +65,14 @@ void game_init::cicles()
                 this->window->close();
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Escape))
                 this->window->close();
-            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::M)) {
+            /*if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::M)) {
                 this->window->close();
                 contex->setResetRequest(true);
-            }
+            }*/
 
-            
-            if (event.type == sf::Event::MouseButtonReleased) {
+            /*if (event.type == sf::Event::MouseButtonReleased) {
                 std::cout << " ---click-click---" << std::endl;
-                std::cout << contex->getMousePosition().x << std::endl;
-                std::cout << contex->getMousePosition().y << std::endl;
-                
-            }
+            }*/
 
         }
         update();

@@ -103,11 +103,13 @@ void state_SETG::action(Context* arg)
 	if (label3.getClickEvent()) {
 		Li[2] = (Li[2] == 1) ? 0 : Li[2]+= 1;
 		label3.setString(L3[Li[2]]);
+		arg->debug = Li[2];
 	}
 		
 	if (label4.getClickEvent()) {
 		Li[3] = (Li[3] == 1) ? 0 : Li[3]+=1;
 		label4.setString(L4[Li[3]]);
+		arg->canvas->setVerticalSyncEnabled(Li[3]);
 	}
 		
 	if (label5.getClickEvent()) {
@@ -115,12 +117,16 @@ void state_SETG::action(Context* arg)
 		label5.setString(L5[Li[4]]);
 	}
 		
-	if (backBtn.getEvent()) changeState(1);
+	if (backBtn.getEvent()) {
+		arg->loadSettings();
+		arg->canvas->setVerticalSyncEnabled(arg->verticalSync);
+		changeState(1);
+	}
 	if (saveBtn.getEvent()) {
 		int newSet[7];
 
-		newSet[0] = (Li[0] == 0) ? 960 : 1280;
-		newSet[1] = (Li[0] == 0) ? 480 : 720;
+		newSet[0] = 960;// (Li[0] == 0) ? 960 : 1280;
+		newSet[1] = 480;// (Li[0] == 0) ? 480 : 720;
 		newSet[2] = Li[1]*4;
 		newSet[3] = 0;
 		newSet[4] = Li[3];
@@ -128,9 +134,9 @@ void state_SETG::action(Context* arg)
 		newSet[6] = Li[2];
 
 		arg->saveSettings(newSet);
-
-		arg->setResetRequest(true);
-		arg->canvas->close();
+		changeState(1);
+		//arg->setResetRequest(true);
+		//arg->canvas->close();
 	}
 
 }

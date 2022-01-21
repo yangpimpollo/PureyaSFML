@@ -23,6 +23,8 @@
 	debug mouse position  listo!
 22.01.18
 	center view           listo!
+22.01.21
+	instant change set    listo!
 
 
 

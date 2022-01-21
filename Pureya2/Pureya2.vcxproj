@@ -178,6 +178,9 @@
     <ClInclude Include="header\util\debug_mode.h" />
     <ClInclude Include="header\util\eventListener.h" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassMap.cd" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -2,6 +2,32 @@
 
 Context::Context()
 {
+    loadSettings();
+
+}
+
+Context::~Context()
+{
+}
+
+void Context::setResetRequest(bool arg)
+{
+    this->resetRequest = arg;
+}
+
+void Context::setContextCanvas(sf::RenderWindow* arg0)
+{
+    this->canvas = arg0;
+    //this->debugMode = arg1;
+}
+
+void Context::setCurrentEvent(sf::Event* arg)
+{
+    this->event = arg;
+}
+
+void Context::loadSettings()
+{
     // load settings
     std::string setDat;
     std::fstream settingFile;
@@ -28,33 +54,18 @@ Context::Context()
         this->realWidth = this->WIDTH;
         this->realHeight = this->HEIGHT;
     }
-
-    std::cout << this->realWidth << std::endl;
-    std::cout << this->realHeight << std::endl;
-    
-}
-
-Context::~Context()
-{
-}
-
-void Context::setResetRequest(bool arg)
-{
-    this->resetRequest = arg;
-}
-
-void Context::setContextCanvas(sf::RenderWindow* arg)
-{
-    this->canvas = arg;
-}
-
-void Context::setCurrentEvent(sf::Event* arg)
-{
-    this->event = arg;
 }
 
 void Context::saveSettings(int arg[])
 {
+    this->WIDTH = arg[0];
+    this->HEIGHT = arg[1];
+    this->winStyle = arg[2];
+    this->frameLimit = arg[3];
+    this->verticalSync = arg[4];
+    this->language = arg[5];
+    this->debug = arg[6];
+
     std::fstream settingFile;
     settingFile.open(set_path, std::ios::out | std::ios::trunc);
     settingFile << arg[0] << std::endl;

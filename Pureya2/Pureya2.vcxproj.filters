@@ -108,4 +108,7 @@
       <Filter>Header Files\util</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassMap.cd" />
+  </ItemGroup>
 </Project>

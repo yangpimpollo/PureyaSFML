@@ -27,15 +27,14 @@ class Context
 		sf::Event* event;
 
 		void setResetRequest(bool arg);
-		void setContextCanvas(sf::RenderWindow* arg);
+		void setContextCanvas(sf::RenderWindow* arg0);
 		void setCurrentEvent(sf::Event* arg);
+		void loadSettings();
 		void saveSettings(int arg[]);
 		sf::Vector2i getMousePosition();
 
 	private:
-		int settings[7];
-		
-
+		int settings[7];	
 		
 };
 
