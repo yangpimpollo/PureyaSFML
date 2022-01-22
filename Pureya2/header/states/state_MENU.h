@@ -13,6 +13,7 @@ private:
 	Button startBtn;
 	Button settgBtn;
 	Button closeBtn;
+	sf::String* Txt1;
 
 public:
 	state_MENU();

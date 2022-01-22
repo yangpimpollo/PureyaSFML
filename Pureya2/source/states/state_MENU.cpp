@@ -2,7 +2,13 @@
 
 state_MENU::state_MENU()
 {
-	startBtn.setBounds(355.f, 180.f, 250.f, 50.f, L"開始 PLAY");
+	/*wstring printerName;
+	printerName.assign(myName.begin(), myName.end());*/
+	sf::String MM = L"開始 PLAY";
+	std::wstring NN; NN.assign(MM.begin(), MM.end());
+	
+	Txt1 = &MM;
+	startBtn.setBounds(355.f, 180.f, 250.f, 50.f, *Txt1);// L"開始 PLAY");
 	startBtn.setColor(sf::Color(162, 180, 222, 220));
 	
 	settgBtn.setBounds(355.f, 250.f, 250.f, 50.f, "OPTIONS");

@@ -25,6 +25,7 @@
 	center view           listo!
 22.01.21
 	instant change set    listo!
+	load utf8 successful
 
 
 

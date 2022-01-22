@@ -1,4 +1,4 @@
-#include "tools/Button.h"
+﻿#include "tools/Button.h"
 
 Button::Button()
 {
@@ -11,11 +11,14 @@ Button::~Button()
 
 void Button::setBounds(float x, float y, float width, float height, const sf::String arg)
 {
+	sf::String MM = "開始 PLAY";
+	std::string LL = "開始 PLAY";
+	std::wstring NN; NN.assign(LL.begin(), LL.end());
 	this->x = x;
 	this->y = y;
 	this->width = width;
 	this->height = height;
-	this->btnText.setString(arg);
+	this->btnText.setString(NN);
 
 	shape.setSize(sf::Vector2f(width, height));
 	shape.setPosition(x, y);
