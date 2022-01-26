@@ -25,7 +25,9 @@
 	center view           listo!
 22.01.21
 	instant change set    listo!
-	load utf8 successful
+	load utf8 successful  not implemented!
+22.01.25
+	screen resolution     not implemented!
 
 
 
