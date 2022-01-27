@@ -153,11 +153,14 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="source\game_init.cpp" />
+    <ClCompile Include="source\state\StateMachine.cpp" />
     <ClCompile Include="source\util\Context.cpp" />
     <ClCompile Include="source\util\debug_mode.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header\game_init.h" />
+    <ClInclude Include="header\state\StateBase.h" />
+    <ClInclude Include="header\state\StateMachine.h" />
     <ClInclude Include="header\util\Context.h" />
     <ClInclude Include="header\util\debug_mode.h" />
   </ItemGroup>

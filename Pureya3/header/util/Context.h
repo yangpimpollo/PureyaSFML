@@ -23,6 +23,7 @@ public:
 	bool resetRequest = false;
 	sf::RenderWindow* canvas;
 	sf::Event* event;
+	sf::Vector2f viewSize;
 
 	void setResetRequest(bool arg);
 	void setContextCanvas(sf::RenderWindow* arg0);

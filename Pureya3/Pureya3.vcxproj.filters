@@ -45,6 +45,9 @@
     <ClCompile Include="source\util\debug_mode.cpp">
       <Filter>Source Files\util</Filter>
     </ClCompile>
+    <ClCompile Include="source\state\StateMachine.cpp">
+      <Filter>Source Files\state</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header\game_init.h">
@@ -55,6 +58,12 @@
     </ClInclude>
     <ClInclude Include="header\util\debug_mode.h">
       <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="header\state\StateBase.h">
+      <Filter>Header Files\state</Filter>
+    </ClInclude>
+    <ClInclude Include="header\state\StateMachine.h">
+      <Filter>Header Files\state</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

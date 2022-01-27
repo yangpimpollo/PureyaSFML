@@ -28,6 +28,8 @@
 	load utf8 successful  not implemented!
 22.01.25
 	screen resolution     not implemented!
+22.01.27
+	screeResol v3         listo!
 
 
 

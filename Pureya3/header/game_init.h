@@ -8,7 +8,7 @@
 #include <SFML/Graphics.hpp>
 #include "util/Context.h"
 #include "util/debug_mode.h"
-//#include "state/StateMachine.h"
+#include "state/StateMachine.h"
 
 class game_init
 {
@@ -21,11 +21,10 @@ private:
 	int fps;
 	Context* contex;
 	debug_mode* debug;
+	StateMachine* stateMachine;
 	sf::RenderWindow* window;
 	sf::View* view;
 
-	
-	/*StateMachine* stateMachine;*/
 
 	void init();
 	void cicles();

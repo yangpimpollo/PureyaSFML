@@ -4,19 +4,19 @@ debug_mode::debug_mode()
 {
     font.loadFromFile("res/Mamelon.otf");
     fps_txt.setFont(font);
-    fps_txt.setCharacterSize(18);
+    fps_txt.setCharacterSize(25);
     fps_txt.setFillColor(sf::Color::Red);
-    fps_txt.setPosition(30.f, 20.f);
+    fps_txt.setPosition(40.f, 30.f);
 
     mouse_X.setFont(font);
-    mouse_X.setCharacterSize(12);
+    mouse_X.setCharacterSize(16);
     mouse_X.setFillColor(sf::Color::Red);
-    mouse_X.setPosition(30.f, 45.f);
+    mouse_X.setPosition(40.f, 65.f);
 
     mouse_Y.setFont(font);
-    mouse_Y.setCharacterSize(12);
+    mouse_Y.setCharacterSize(16);
     mouse_Y.setFillColor(sf::Color::Red);
-    mouse_Y.setPosition(30.f, 60.f);
+    mouse_Y.setPosition(40.f, 85.f);
 }
 
 debug_mode::~debug_mode()

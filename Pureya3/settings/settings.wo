@@ -1,7 +1,7 @@
-     width:   960
-    height:   480
+     width:   832
+    height:   468
   winStyle:    4
 frameLimit:    0
-     vSync:    1
+     vSync:    0
   language:    0
      debug:    1

@@ -12,6 +12,7 @@ void game_init::start()
 {
     this->contex = new Context();
     this->debug = new debug_mode();
+    this->stateMachine = new StateMachine();
 
     do {
         init();
@@ -39,6 +40,11 @@ void game_init::init()
     this->window->setMouseCursor(cursor);
     //this->window->setMouseCursorGrabbed(true);
     //this->window->setPosition(sf::Vector2i(0, 500));
+
+    this->view = new sf::View();
+    this->view->setCenter(sf::Vector2f(680.f, 382.5f));  // center of world
+    //this->view->setSize(1360,1020);
+    this->view->setSize(this->contex->viewSize);
 
     this->contex->setContextCanvas(this->window);
 }
@@ -81,13 +87,16 @@ void game_init::cicles()
 
 void game_init::update()
 {
+    this->stateMachine->updateState(this->contex);
     this->debug->update(this->contex);
 }
 
 void game_init::render()
 {
     this->window->clear(sf::Color::Black);
+    this->window->setView(*view);
 
+    this->stateMachine->renderState(this->window);
     this->debug->render(this->window);
 
     this->window->display();

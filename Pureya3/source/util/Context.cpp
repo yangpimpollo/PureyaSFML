@@ -37,11 +37,18 @@ void Context::loadSettings()
     this->verticalSync = settings[4];
     this->language = settings[5];
     this->debug = settings[6];
+
+    float multiply1 = 1360.f / this->WIDTH;
+    float multiply2 = (this->WIDTH <1000)? 1.33f : 1.f;
+    viewSize.x = (this->winStyle != 8) ? this->WIDTH * multiply1 : sf::VideoMode::getDesktopMode().width * multiply2;
+    viewSize.y = (this->winStyle != 8) ? this->HEIGHT * multiply1 : sf::VideoMode::getDesktopMode().height * multiply2;
 }
 
 sf::Vector2i Context::getMousePosition()
 {
-    int x = sf::Mouse::getPosition(*this->canvas).x;
-    int y = sf::Mouse::getPosition(*this->canvas).y;
+    sf::Vector2i pixelPos = sf::Mouse::getPosition(*this->canvas);
+
+    int x = (int)this->canvas->mapPixelToCoords(pixelPos).x;
+    int y = (int)this->canvas->mapPixelToCoords(pixelPos).y;
     return sf::Vector2i(x, y);
 }
